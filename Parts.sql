@@ -90,3 +90,23 @@ Values
 ('S5', 'P6', 'J4', 500);
 select* from supply
 
+select distinct 
+p_name, P_id
+from part;
+
+select J_id, city
+from project
+where city = 'LONDON';
+
+/*find the name and weight of red parts*/
+Use Parts;
+Select p_name, weight
+From part
+where colour = 'RED';
+
+/* find unique names of suppliers from London*/
+Select distinct
+sname
+from supplier
+where city = 'LONDON';
+
